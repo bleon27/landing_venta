@@ -18,7 +18,7 @@
   font-weight: normal;
 }
 
-p{
+p {
   font-family: "RobotoSlab-Light";
 }
 
@@ -77,15 +77,6 @@ main {
   position: relative;
 }
 
-.jumbotron-content .buttons {
-  position: absolute;
-  bottom: 10%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-}
-
 .jumbotron-content .buttons button {
   font-size: 15pt;
 }
@@ -103,12 +94,46 @@ button {
   cursor: pointer;
 }
 
-.jumbotron {
-  background-image: url("./img/14589.jpg");
+.bg-jumbotron {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./img/14589.jpg");
   height: calc(100vh - 104px);
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: center;
+}
+
+.contenido-jumbotron {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.contenido-jumbotron h2 {
+  text-align: center;
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 100px;
+}
+
+.contenido-jumbotron p {
+  text-align: center;
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 100px;
+}
+
+.jumbotron-content .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
 }
 
 section.content {
@@ -173,7 +198,7 @@ section.content > header h1 {
   margin-bottom: 30px;
 }
 
-.footer .social-media ul{
+.footer .social-media ul {
   list-style: none;
   display: flex;
   gap: 2rem;
