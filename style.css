@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "RobotoSlab-Medium";
+  src: url('./font/RobotoSlab-Medium.ttf') format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+    font-family: "RobotoSlab-Light";
+    src: url('./font/RobotoSlab-Light.ttf') format("truetype");
+    font-style: normal;
+    font-weight: normal;
+  }
+
+body, button {
+    font-family: 'RobotoSlab-Medium';
+}
+
+.navbar {
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+}
+
+.navbar nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar nav .items {
+  list-style: none;
+  display: flex;
+}
+
+.navbar nav .items .logo {
+  height: 100px;
+}
+
+.navbar nav .items .item-link {
+  padding: 20px 20px 20px 20px;
+}
+
+.navbar nav .items .item-link .link {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 20px 0 20px;
+}
+
+.navbar nav .items .item-link:hover {
+  background-color: black;
+  color: #fff;
+}
+
+.navbar nav .items .item-link:hover .link {
+  color: #fff;
+}
+
+main {
+  padding-top: 104px;
+}
+.jumbotron {
+  background-image: url("./img/14589.jpg");
+  height: calc(100vh - 104px);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: center;
+}
+
+section.content {
+  padding: 30px;
+}
+section.content header {
+  padding: 60px;
+}
+section.content header h1 {
+  text-align: center;
+  font-size: 25pt;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 26%);
+  /*grid-template-rows: repeat(3, 200px);*/
+  justify-content: center;
+  grid-gap: 3rem;
+}
+
+.card-header h1 {
+    text-align: center;
+  }
+
+.card-body img {
+  width: 100%;
+}
+
+.card-footer {
+  justify-content: center;
+  display: flex;
+}
+.card-footer button {
+  padding: 10px;
+  background-color: #d54d29;
+  border: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  color: #fff;
+}
+@media only screen and (max-width: 1191px) {
+  .jumbotron {
+    background-size: contain;
+    height: auto;
+    padding: 37%;
+  }
+}
