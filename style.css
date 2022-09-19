@@ -31,7 +31,9 @@ input {
   padding: 7px;
 }
 
-textarea:focus, input:focus, input[type]:focus {
+textarea:focus,
+input:focus,
+input[type]:focus {
   border-color: #803b36 !important;
   border-width: 2px !important;
   outline: 0 none;
@@ -220,7 +222,7 @@ section.content > header h1 {
 }
 
 .bg-registro {
-  background-image: url("https://img.freepik.com/foto-gratis/vista-frontal-sabrosa-hamburguesa-carne-queso-ensalada-fondo-oscuro_140725-89595.jpg?w=1060&t=st=1663548511~exp=1663549111~hmac=8661503054f5213ac648e153ac804d3f4f4f58c4349d5a1aaba6edfabe68293c");
+  background-image: url("https://img.freepik.com/foto-gratis/vista-frontal-sabrosas-papas-fritas-salsas-espacio-oscuro_140725-95380.jpg?w=1060&t=st=1663550806~exp=1663551406~hmac=4abbf379a296e8d6ae009464a60f2cd5df52cf01e5ff43c29402976ec867af97");
   height: calc(100vh - 104px);
   background-size: cover;
   background-repeat: no-repeat;
@@ -240,10 +242,18 @@ section.content > header h1 {
 
 .form-register {
   width: 70%;
+
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.31);
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.31);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.31);
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.175);
+  background-color: #fff;
+  padding: 20px;
 }
 
-.form-register .header h2{
-  color: #dadadb;
+.form-register .header h2 {
+  color: #303030;
 }
 
 .form-register input,
@@ -253,13 +263,61 @@ section.content > header h1 {
   border: 2px solid rgba(0, 0, 0, 0.05);
 }
 
-.contactos{
+.contactos {
   display: grid;
   grid-template-columns: repeat(2, 50%);
   grid-gap: 1rem;
+  padding: 0 60px 30px 60px;
+}
+
+.contenedor-vendedores {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenedor-vendedores h2 {
+  text-align: center;
+}
+
+.title-contactos {
+  text-align: center;
+  font-size: 25pt;
+  color: #303030;
   padding: 60px;
 }
 
+.contenedor-vendedores .vendedores {
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  margin: 10px 0 10px 0;
+  display: flex;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.31);
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.31);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.31);
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.175);
+  background-color: #fff;
+}
+
+.contactos .mapa {
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.31);
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.31);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.31);
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.175);
+}
+
+.contenedor-vendedores .vendedores img {
+  height: 100%;
+  width: 84px;
+  margin-right: 10px;
+}
 .footer {
   display: grid;
   grid-template-columns: repeat(3, 26%);
