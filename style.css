@@ -27,11 +27,33 @@ button {
   font-family: "RobotoSlab-Medium";
 }
 
+input {
+  padding: 7px;
+}
+
+textarea:focus, input:focus, input[type]:focus {
+  border-color: #803b36 !important;
+  border-width: 2px !important;
+  outline: 0 none;
+}
+
+textarea {
+  width: 100%;
+  padding: 7px;
+}
+
+.my-1 {
+  margin: 1rem;
+}
+
 .navbar {
   background-color: #fff;
   position: fixed;
   width: 100%;
   z-index: 1;
+  box-shadow: 0px 0px 5px -1px rgb(0 0 0 / 75%);
+  -webkit-box-shadow: 0px 0px 5px -1px rgb(0 0 0 / 75%);
+  -moz-box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.75);
 }
 
 .navbar nav {
@@ -48,20 +70,22 @@ button {
 .navbar nav .items .logo {
   height: 100px;
 }
-
+/*
 .navbar nav .items .item-link {
-  padding: 20px 20px 20px 20px;
-}
+  padding: 0px 20px 0px 20px;
+}*/
 
 .navbar nav .items .item-link .link {
   display: flex;
   align-items: center;
   height: 100%;
-  padding: 0 20px 0 20px;
+  padding: 20px 20px 20px 20px;
+  text-decoration: none;
+  color: #303030;
 }
 
 .navbar nav .items .item-link:hover {
-  background-color: black;
+  background-color: #303030;
   color: #fff;
 }
 
@@ -75,6 +99,7 @@ main {
 
 .jumbotron-content {
   position: relative;
+  display: block;
 }
 
 .jumbotron-content .buttons button {
@@ -145,7 +170,9 @@ section.content > header {
 section.content > header h1 {
   text-align: center;
   font-size: 25pt;
+  color: #303030;
 }
+
 .grid-article {
   display: grid;
   grid-template-columns: repeat(3, 26%);
@@ -158,28 +185,79 @@ section.content > header h1 {
   text-align: center;
   font-size: 18pt;
   margin-bottom: 15px;
+  color: #303030;
+}
+
+.card {
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.31);
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.31);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.31);
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.175);
+  background-color: #fff;
 }
 
 .card-body img {
   width: 100%;
-  border-radius: 5px 5px 0px 0px;
-  -webkit-border-radius: 5px 5px 0px 0px;
-  -moz-border-radius: 5px 5px 0px 0px;
-  -ms-border-radius: 5px 5px 0px 0px;
-  -o-border-radius: 5px 5px 0px 0px;
+  border-radius: 4px 4px 0px 0px;
+  -webkit-border-radius: 4px 4px 0px 0px;
+  -moz-border-radius: 4px 4px 0px 0px;
+  -ms-border-radius: 4px 4px 0px 0px;
+  -o-border-radius: 4px 4px 0px 0px;
 }
 
 .card-body .description {
   text-align: justify;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  padding: 1rem;
 }
 
 .card-footer {
   justify-content: center;
   display: flex;
+  padding: 1rem;
 }
 .card-footer button {
+}
+
+.bg-registro {
+  background-image: url("https://img.freepik.com/foto-gratis/vista-frontal-sabrosa-hamburguesa-carne-queso-ensalada-fondo-oscuro_140725-89595.jpg?w=1060&t=st=1663548511~exp=1663549111~hmac=8661503054f5213ac648e153ac804d3f4f4f58c4349d5a1aaba6edfabe68293c");
+  height: calc(100vh - 104px);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: center;
+
+  position: relative;
+}
+
+.register {
+  width: 50%;
+  display: flex;
+  justify-content: end;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.form-register {
+  width: 70%;
+}
+
+.form-register .header h2{
+  color: #dadadb;
+}
+
+.form-register input,
+.form-register textarea {
+  width: 100%;
+  border-radius: 5px;
+  border: 2px solid rgba(0, 0, 0, 0.05);
+}
+
+.contactos{
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-gap: 1rem;
+  padding: 60px;
 }
 
 .footer {
@@ -190,12 +268,14 @@ section.content > header h1 {
   grid-gap: 3rem;
   padding: 50px 0 50px 0;
   background-color: #803b36;
-  color: #c9d1d9;
+  color: #dadadb;
 }
 
 .footer h2 {
   text-align: center;
   margin-bottom: 30px;
+  color: #dadadb;
+  font-weight: 400;
 }
 
 .footer .social-media ul {
