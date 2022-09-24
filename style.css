@@ -348,10 +348,58 @@ section.content > header h1 {
   width: 50px;
 }
 
+.hamburger{
+  display: none;
+}
+
 @media only screen and (max-width: 1191px) {
   .jumbotron {
     background-size: contain;
     height: auto;
     padding: 37%;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .grid-article {
+    grid-template-columns: repeat(2, 50%);
+  }
+  .contactos {
+    grid-template-columns: repeat(1, 100%);
+  }
+  .content-mapa{
+    display: flex;
+    justify-content: center;
+  }
+  .bg-registro{
+    padding: 30px 0px 30px 0px !important;
+  }
+  .register {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .footer {
+    grid-template-columns: repeat(2, 50%);
+    padding: 68px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .grid-article {
+    grid-template-columns: repeat(1, 100%);
+  }
+  .footer {
+    grid-template-columns: repeat(1, 100%);
+  }
+  .navbar nav .items {
+    display: none;
+  }
+  .hamburger{
+    display: block;
+    width: 103px;
+    padding: 18px;
   }
 }
